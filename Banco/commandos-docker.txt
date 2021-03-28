@@ -1,0 +1,6 @@
+
+# para baixar o container do mysql
+docker pull mysql:5.7
+
+# para iniciar o container
+docker run -p 3306:3306 --name banco-local -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
